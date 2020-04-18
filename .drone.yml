@@ -1,0 +1,9 @@
+kind: pipeline
+type: docker
+name: nodejs-demo
+
+steps:
+- name: build
+  build :
+    context: ./nodejs-demo
+    dockerfile: Dockerfile
