@@ -1,9 +1,9 @@
 kind: pipeline
-type: docker
-name: nodejs-demo
+name: default
 
 steps:
-- name: build
-  build :
-    context: ./nodejs-demo
-    dockerfile: Dockerfile
+- name: test
+  image: node
+  commands:
+  - npm install
+  - npm test
