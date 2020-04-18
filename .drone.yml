@@ -6,6 +6,12 @@ steps:
   image: node
   commands:
   - npm install
+
+- name: audit
+  image: node
+  commands:
+  - npm audit
+
 - name: test
   image: node
   commands:
